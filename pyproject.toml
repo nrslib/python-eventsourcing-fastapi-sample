@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pyes-fastapi"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
+fastapi = "^0.109.1"
+sqlalchemy = "^2.0.0"
+fastapi-sqlalchemy = "^0.2.1"
+pydantic = "^1.10.12"
+# latest
+eventsourcing = { version = "~=9.3", extras = ["sqlite"] }
+eventsourcing_sqlalchemy = "^0.8"
+# with Axon
+#eventsourcing = { version = ">=9.2,<9.3", extras = ["sqlite"] }
+#eventsourcing-axonserver="^0.1.5"
+#eventsourcing_sqlalchemy = "^0.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

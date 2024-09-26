@@ -29,4 +29,4 @@ archive.zip
 # macOS
 .DS_Store
 
-src/pyes_fastapi/db
+db/
